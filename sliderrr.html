@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        .window{
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .reel{
+            width: 300%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: slider 20s infinite;
+        }
+        .reel img{
+            height: 100%;
+            width: 33.33%;
+            float: left;
+        }
+        .text{
+            position:absolute;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+            background-color:seashell;
+        }
+        @keyframes slider {
+            0%{left: 0%;}
+            28%{left: 0%;}
+            33%{left: -100%;}
+            61%{left: -100%;}
+            66%{left: -200%;}
+            95%{left: -200%}
+            100%{left: 0%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="reel">
+            <img src="./slider2.jpg" alt="">
+            <img src="./ohhhhhh.jpg" alt="">
+            <img src="./shop.jpg"alt="">
+        </div>
+        <div class="text">
+            <h1>Hello</h1>
+            <p>World</p>
+            <position: middle></position:>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nihil corrupti nesciunt voluptatibus similique at!</p>
+</body>
+</html>
